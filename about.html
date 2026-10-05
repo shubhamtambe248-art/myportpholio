@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn about Café Delight - our story, mission, values, and the team behind your favorite coffee and treats.">
+    <meta name="keywords" content="cafe, coffee shop, about us, café story, coffee culture">
+    <meta name="author" content="Café Delight">
+    <title>About Us - Café Delight</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">☕ Café Delight</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="viewCart()">
+                        🛒 Cart <span id="cartBadge" class="cart-badge" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<div class="bg-dark text-white py-5 text-center">
+    <div class="container">
+        <h1>About Us</h1>
+        <p class="lead">Discover the story behind Café Delight</p>
+    </div>
+</div>
+
+<!-- Our Story Section -->
+<section class="container mt-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYPmmFivTdaNTiH22LomLoHxgIlOSd8W1Yn0gd9zlBQYQIA_Vqhyx21xQ&s=10" class="img-fluid rounded" alt="Our Café">
+        </div>
+        <div class="col-md-6">
+            <h2>Our Story</h2>
+            <p>Founded in 2020, Café Delight started as a small dream to create a space where people could enjoy exceptional coffee and delicious treats in a warm, welcoming atmosphere.</p>
+            <p>What began as a humble coffee cart has grown into a beloved neighborhood café, known for our commitment to quality, sustainability, and community. Every cup we serve is crafted with care, using only the finest beans sourced from sustainable farms around the world.</p>
+            <p>Our journey has been guided by a simple philosophy: great coffee and good food bring people together. We believe that a café should be more than just a place to grab a drink – it should be a community hub where memories are made.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card p-4 h-100">
+                <h3>🎯 Our Mission</h3>
+                <p>To serve the finest coffee and food while creating a welcoming space where our community can connect, relax, and create lasting memories. We are committed to sustainability, quality, and exceptional customer service.</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card p-4 h-100">
+                <h3>👁️ Our Vision</h3>
+                <p>To become the most loved café in our community, known for our exceptional quality, warm atmosphere, and commitment to making a positive impact on both our customers and the environment.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Values -->
+<section class="container mt-5">
+    <h2 class="text-center mb-4">Our Values</h2>
+    <div class="row">
+        <div class="col-md-3 text-center">
+            <div class="card p-4">
+                <h3>☕ Quality</h3>
+                <p>We never compromise on quality. From our beans to our ingredients, everything is carefully selected to ensure the best experience.</p>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card p-4">
+                <h3>🌱 Sustainability</h3>
+                <p>We're committed to eco-friendly practices, from sourcing sustainable beans to using biodegradable packaging.</p>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card p-4">
+                <h3>🤝 Community</h3>
+                <p>We believe in giving back. We support local initiatives and create a space where everyone feels welcome.</p>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card p-4">
+                <h3>💝 Passion</h3>
+                <p>Our team is passionate about what we do. Every cup, every dish is made with love and dedication.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Meet the Team -->
+<section class="container mt-5">
+    <h2 class="text-center mb-4">Meet Our Team</h2>
+    <div class="row">
+        <div class="col-md-4 text-center">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Profile_avatar_placeholder_large.png/800px-Profile_avatar_placeholder_large.png" class="card-img-top" alt="Team Member">
+                <div class="card-body">
+                    <h5 class="card-title">Rahul Sharma</h5>
+                    <p class="card-text">Founder & Head Barista</p>
+                    <p class="card-text">With 15 years of experience in the coffee industry, Rahul brings passion and expertise to every cup.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Profile_avatar_placeholder_large.png/800px-Profile_avatar_placeholder_large.png" class="card-img-top" alt="Team Member">
+                <div class="card-body">
+                    <h5 class="card-title">Priya Patel</h5>
+                    <p class="card-text">Head Chef</p>
+                    <p class="card-text">Priya's culinary expertise and creativity bring delicious treats to our menu every day.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Profile_avatar_placeholder_large.png/800px-Profile_avatar_placeholder_large.png" class="card-img-top" alt="Team Member">
+                <div class="card-body">
+                    <h5 class="card-title">Amit Kumar</h5>
+                    <p class="card-text">Operations Manager</p>
+                    <p class="card-text">Amit ensures smooth operations and exceptional customer service for every visitor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3">
+                <h2>5+</h2>
+                <p>Years of Experience</p>
+            </div>
+            <div class="col-md-3">
+                <h2>50K+</h2>
+                <p>Happy Customers</p>
+            </div>
+            <div class="col-md-3">
+                <h2>20+</h2>
+                <p>Unique Products</p>
+            </div>
+            <div class="col-md-3">
+                <h2>15+</h2>
+                <p>Team Members</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+                    <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-3">📘 Facebook</a>
+                <a href="#" class="text-white me-3">📸 Instagram</a>
+                <a href="#" class="text-white">🐦 Twitter</a>
+            </div>
+        </div>
+        <hr class="mt-4">
+        <p>© 2026 Café Delight | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

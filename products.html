@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore our delicious menu at Café Delight - premium coffee, juicy burgers, fresh sandwiches, and delectable cakes. Order online now!">
+    <meta name="keywords" content="menu, coffee, burgers, sandwiches, cakes, café menu, food delivery, online food order">
+    <meta name="author" content="Café Delight">
+    <title>Products - Café Delight | Our Menu</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="home.html">☕ Café Delight</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="viewCart()">
+                        🛒 Cart <span id="cartBadge" class="cart-badge" style="display: none;">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<div class="bg-dark text-white py-5 text-center">
+    <div class="container">
+        <h1>Our Menu</h1>
+        <p class="lead">Discover our delicious selection of coffee, snacks, and treats</p>
+    </div>
+</div>
+
+<!-- Products Section -->
+<section id="products" class="container mt-5">
+    <h2 class="text-center mb-4">Coffee & Beverages</h2>
+
+    <div class="row">
+        <!-- Product 1 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/025/282/026/small/stock-of-mix-a-cup-coffee-latte-more-motive-top-view-foodgraphy-generative-ai-photo.jpg" class="card-img-top" alt="Coffee">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Coffee</h5>
+                    <span class="badge bg-success">₹120</span>
+                    <p class="card-text">Hot and fresh coffee made from premium beans</p>
+                    <button class="btn btn-primary" onclick="orderItem(1)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://i.pinimg.com/736x/ce/44/a2/ce44a25cdaac40f1b2072cf51f064948.jpg" class="card-img-top" alt="Cappuccino">
+                <div class="card-body">
+                    <h5 class="card-title">Cappuccino</h5>
+                    <span class="badge bg-success">₹150</span>
+                    <p class="card-text">Rich espresso with steamed milk foam</p>
+                    <button class="btn btn-primary" onclick="orderItem(2)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqdPTDkSkbgw3SVRtS91D2zFcvai_loiaaZ6hNBMN8LWZjK_osqY2dqjAl&s=10" class="card-img-top" alt="Latte">
+                <div class="card-body">
+                    <h5 class="card-title">Café Latte</h5>
+                    <span class="badge bg-success">₹140</span>
+                    <p class="card-text">Smooth espresso with creamy steamed milk</p>
+                    <button class="btn btn-primary" onclick="orderItem(3)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center mb-4 mt-5">Burgers & Sandwiches</h2>
+
+    <div class="row">
+        <!-- Product 4 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIA6Q0DZC3k4OGBP4ufjAhqJTPLg74BMh51PjMJEruiw&s" class="card-img-top" alt="Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Classic Burger</h5>
+                    <span class="badge bg-success">₹150</span>
+                    <p class="card-text">Juicy beef patty with cheese and fresh vegetables</p>
+                    <button class="btn btn-primary" onclick="orderItem(4)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqVqsbLACdVG4q1Upsve_xjVpezCQ1jM3a_SlXsr_yS85kcnutVRJuRys&s=10" class="card-img-top" alt="Cheese Burger">
+                <div class="card-body">
+                    <h5 class="card-title">Double Cheese Burger</h5>
+                    <span class="badge bg-success">₹200</span>
+                    <p class="card-text">Double patty with extra cheese and special sauce</p>
+                    <button class="btn btn-primary" onclick="orderItem(5)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEagWELRXWTYOKfMJM49W5dO_E3RUfphgDm73b23fEIvW7tNkg36bktNv&s=10" class="card-img-top" alt="Club Sandwich">
+                <div class="card-body">
+                    <h5 class="card-title">Club Sandwich</h5>
+                    <span class="badge bg-success">₹180</span>
+                    <p class="card-text">Triple-layered sandwich with chicken and vegetables</p>
+                    <button class="btn btn-primary" onclick="orderItem(6)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-center mb-4 mt-5">Desserts & Cakes</h2>
+
+    <div class="row">
+        <!-- Product 7 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0hT4LmqN54MxfztC4h_NqmO8B2oKHX_X9opDZO-djQ&s=10" class="card-img-top" alt="Chocolate Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Chocolate Cake</h5>
+                    <span class="badge bg-success">₹200</span>
+                    <p class="card-text">Rich chocolate cake with creamy frosting</p>
+                    <button class="btn btn-primary" onclick="orderItem(7)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkmE4RIA4FlvDvvppblkPxCb7IQIj5tKJspHv-5fNmAwEBPXQJo-8wddY&s=10" class="card-img-top" alt="Strawberry Cake">
+                <div class="card-body">
+                    <h5 class="card-title">Strawberry Cake</h5>
+                    <span class="badge bg-success">₹220</span>
+                    <p class="card-text">Fresh strawberry cake with whipped cream</p>
+                    <button class="btn btn-primary" onclick="orderItem(8)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="col-md-4">
+            <div class="card product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7yBmG5CtTAtSABHUuUwsWBQKG690jAptWeQutaIRT9E104Wj8j-w22oN&s=10" class="card-img-top" alt="Cupcakes">
+                <div class="card-body">
+                    <h5 class="card-title">Assorted Cupcakes</h5>
+                    <span class="badge bg-success">₹150</span>
+                    <p class="card-text">Box of 6 assorted flavored cupcakes</p>
+                    <button class="btn btn-primary" onclick="orderItem(9)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+                    <li><a href="products.html" class="text-white text-decoration-none">Products</a></li>
+                    <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+                    <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="privacy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="text-white text-decoration-none">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-3">📘 Facebook</a>
+                <a href="#" class="text-white me-3">📸 Instagram</a>
+                <a href="#" class="text-white">🐦 Twitter</a>
+            </div>
+        </div>
+        <hr class="mt-4">
+        <p>© 2026 Café Delight | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
